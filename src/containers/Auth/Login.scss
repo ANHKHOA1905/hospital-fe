@@ -1,0 +1,94 @@
+.login-background {
+  background-color: antiquewhite;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: whitesmoke;
+  border: solid 1px white;
+  border-radius: 20px;
+  height: 70%;
+  width: 30%;
+}
+
+.login-content {
+  padding: 1.5rem;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  &__title {
+    font-weight: 700;
+    font-size: 3.5rem;
+  }
+  &__input {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    position: relative;
+    label {
+      font-weight: 700;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      font-size: 1.7rem;
+      margin-top: 0.3rem;
+      padding: 1rem 0.5rem;
+      color: dimgray;
+    }
+    .custom-password {
+      position: relative;
+      &__icon {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(50%);
+        cursor: pointer;
+      }
+    }
+  }
+  &__button {
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem;
+    color: ghostwhite;
+    background-color: #0071ba;
+    width: 90%;
+    cursor: pointer;
+  }
+  &__action {
+    margin-top: 1.5rem;
+    &__other {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .social {
+        display: flex;
+        &__login {
+          border-radius: 50%;
+          font-size: 2rem;
+          color: white;
+          height: 4rem;
+          width: 4rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 1rem 0.5rem;
+        }
+        .gg {
+          background-color: red;
+        }
+        .fb {
+          background-color: blue;
+        }
+      }
+    }
+  }
+}
